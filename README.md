@@ -1,2 +1,2 @@
 # CodingChallenges
-Find Solutions of coding challenges solved by me in Kotlin
+Find Solutions of coding challenges in Kotlin

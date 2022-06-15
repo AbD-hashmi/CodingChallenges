@@ -1,3 +1,6 @@
+/* Algorithm
+1.Find the largest number in the array and save in a variable
+2.Traverse the array again and add the condition to skip the largest number in the array */
 fun main() {
     //Second largest number
     println(findSecondLagestNum(arrayOf(1,2,3,4,5,10,15)))

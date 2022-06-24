@@ -5,7 +5,6 @@ fun main() {
     //Second largest number
     println(findSecondLagestNum(arrayOf(1,2,3,4,5,10,15)))
 }
-
 fun findSecondLagestNum(arr:Array<Int>):Int{
     var largestnum = 0
     var secondLargest = 0

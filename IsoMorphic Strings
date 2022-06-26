@@ -1,0 +1,28 @@
+/*Algorithm
+1. Save s as the key and t as the value in a hashmap
+2. while itrating check if the key and value has already been added
+3. if true then check if the value is same as already added
+4. If false then break and return false */
+class Solution {
+    fun isIsomorphic(s: String, t: String): Boolean {
+      var result = false
+        if(s.length == t.length){
+         var table = HashMap<Char,Char>()
+         for(i in 0..s.length-1){
+             if(!table.containsKey(s[i]) && !table.containsValue(t[i])){
+             table.put(s[i],t[i])
+             result = true
+             }else
+             if(table.containsKey(s[i]) && table.getValue(s[i]) == t[i])
+             continue
+             else{
+                 result = false
+             break
+             }
+         }
+        }
+        return result
+    }
+}
+/*Runtime: 246 ms, faster than 84.14% of Kotlin online submissions for Isomorphic Strings.
+Memory Usage: 36.9 MB, less than 86.21% of Kotlin online submissions for Isomorphic Strings.*/
